@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+
+:root{
+    --bg-primary: #272929;
+    --bg-secondary: #3A3C3C;
+}
+
+body{
+    color: #E6E6E6;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.align-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flow-root;
+}
+
+
+
+.mobile-hero{
+    background: url('./assets/headset.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+}
+
+.vertical-modal{
+    width: 100%;
+    height: 100%;
+    background: var(--bg-primary);
+    position: relative;
+    border-radius: 24px 24px 0px 0px;
+    margin-top: -25px;
+    display: flow-root;
+}
+
+.status-icon{
+    position: absolute;
+    inset-block-start: -5%;
+    right: 26px;
+}
+
+.modal-contents{
+    display: grid;
+    row-gap: 32px;
+    margin-top: 50px;
+}
+
+.modal-header > span{
+    background: #3A454B;
+    border: 1px solid #3D5663;
+    border-radius: 8px;
+    padding: 3px 8px;
+    display: block;
+    width: min-content;
+    font-size: 14px;
+}
+
+.modal-header > h2{
+    margin-top: 12px;
+}
+
+.modal-header > div{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.modal-carousel{
+    margin-inline: 15px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-align: end;
+}
+.modal-carousel::-webkit-scrollbar{
+    scroll-snap-type: none;
+}
+
+.carousel-cards{
+    width: 290px;
+    max-height: 307px;
+    overflow-y: auto;
+    border-radius: 24px;
+    background: var(--bg-secondary);
+    padding: 18px 26px;
+    display: grid;
+    row-gap: 10px;
+    display: flow-root;
+}
+.carousel-cards::-webkit-scrollbar{
+    scroll-snap-type: none;
+}
+
+.carousel-card-header{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+:is(.modal-header, .modal-footer) {
+    width: 280px;
+    margin-inline: auto;
+    height: 100%;
+}
