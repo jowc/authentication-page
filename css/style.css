@@ -15,8 +15,8 @@ body{
 }
 
 h2{
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 18px !important;
+    font-weight: 600 !important;
 }
 
 a{
@@ -115,8 +115,8 @@ a{
 
 .carousel-cards{
     width: 290px;
-    max-height: 307px;
-    overflow-y: auto;
+    height: 307px;
+    overflow: auto;
     border-radius: 24px;
     background: var(--bg-secondary);
     padding: 18px 26px;
@@ -124,14 +124,16 @@ a{
     row-gap: 10px;
     display: flow-root;
 }
-.carousel-cards::-webkit-scrollbar{
+/* .carousel-cards::-webkit-scrollbar{
     scroll-snap-type: none;
-}
+} */
 
 .carousel-card-header{
     display: flex;
     align-items: start;
     justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 8px;
 }
 
 .modal-footer{
