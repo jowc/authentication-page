@@ -4,6 +4,7 @@
 :root{
     --bg-primary: #272929;
     --bg-secondary: #3A3C3C;
+    --primary-color: #447D69;
 }
 
 body{
@@ -16,6 +17,20 @@ body{
 h2{
     font-size: 18px;
     font-weight: 600;
+}
+
+button{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding-block: 15px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .align-flex{
@@ -119,7 +134,17 @@ h2{
     justify-content: space-between;
 }
 
-:is(.modal-header, .modal-footer) {
+.modal-footer{
+    padding-block: 21px;
+    text-align: center;
+    background-color: var(--bg-secondary);
+}
+.modal-footer div{
+    display: grid;
+    row-gap: 12px;
+}
+
+:is(.modal-header, .modal-footer-container) {
     width: 280px;
     margin-inline: auto;
     height: 100%;
