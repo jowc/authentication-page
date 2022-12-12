@@ -1,0 +1,41 @@
+:root{
+    --loading-color: #D9D9D945;
+    --loading-2: #D9D9D926;
+    --loading-3: #D9D9D917;
+    --btn-loading: #D9D9D924;
+}
+
+.mobile-hero{
+    background: url('../assets/headset.png');
+}
+
+
+.loader{
+    background-color: var(--loading-color);
+    border-radius: 30px;
+    box-shadow: 4px 3px 2px 9px #3f3f4263;
+}
+
+.loader-2{
+    background-color: var(--loading-2);
+    border-radius: 30px;
+    box-shadow: 4px 3px 2px 9px #3f3f4263;
+}
+
+.loader-3{
+    background-color: var(--loading-3);
+    border-radius: 30px;
+    box-shadow: 4px 3px 2px 9px #3f3f4263;
+}
+
+.loader-btn{
+    background-color: var(--btn-loading);
+    border-radius: 30px;
+    margin: auto;
+    width: 80px;
+    height: 14px;
+}
+
+.carousel-cards{
+    box-shadow: 5px 4px 2px #18181963;
+}

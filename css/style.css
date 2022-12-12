@@ -12,10 +12,13 @@ body{
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    max-width: 500px;
+    max-height: 700px;
+    margin: auto;
 }
 
 h2{
-    font-size: 18px !important;
+    font-size: 16.5px !important;
     font-weight: 600 !important;
 }
 
@@ -31,6 +34,11 @@ a{
     border-radius: 4px;
     font-weight: 600;
     letter-spacing: 2px;
+}
+
+#expired-bg{
+    background-color: #4B3A3A;
+    border: 1px solid #755959;
 }
 
 .align-flex{
@@ -49,7 +57,7 @@ a{
 
 
 .mobile-hero{
-    background: url('../assets/headset.png');
+    background: url('../assets/shampoo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -126,7 +134,7 @@ a{
     display: grid;
     row-gap: 10px;
     display: flow-root;
-    box-shadow: 6px 10px 2px #18181963;
+    box-shadow: 5px 7px 8px 3px #18181963;
 }
 /* .carousel-cards::-webkit-scrollbar{
     scroll-snap-type: none;
@@ -155,7 +163,7 @@ a{
 }
 
 :is(.modal-header, .modal-footer-container) {
-    width: 280px;
+    width: 300px;
     margin-inline: auto;
     height: 100%;
 }
