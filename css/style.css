@@ -49,7 +49,7 @@ a{
 
 
 .mobile-hero{
-    background: url('./assets/headset.png');
+    background: url('../assets/headset.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,7 +63,7 @@ a{
     background: var(--bg-primary);
     position: relative;
     border-radius: 24px 24px 0px 0px;
-    margin-top: -25px;
+    margin-top: -30px;
     display: flow-root;
 }
 
@@ -104,29 +104,37 @@ a{
     margin-inline: 15px;
     display: grid;
     grid-auto-flow: column;
+    grid-auto-columns: 290px;
+    grid-auto-rows: 307px;
     column-gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scroll-snap-align: end;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
 }
 /* .modal-carousel::-webkit-scrollbar{
     scroll-snap-type: none;
 } */
 
 .carousel-cards{
-    width: 290px;
-    height: 307px;
+    scroll-snap-align: start;
     overflow: auto;
     border-radius: 24px;
     background: var(--bg-secondary);
     padding: 18px 26px;
+    margin-block: 10px;
     display: grid;
     row-gap: 10px;
     display: flow-root;
+    box-shadow: 6px 10px 2px #18181963;
 }
 /* .carousel-cards::-webkit-scrollbar{
     scroll-snap-type: none;
 } */
+.carousel-cards:hover{
+    box-shadow: none;
+    transition: box-shadow 500ms ease-in-out;
+}
 
 .carousel-card-header{
     display: flex;
