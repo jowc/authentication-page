@@ -54,30 +54,71 @@ a{
 }
 
 .mobile{
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
+   
     display: flow-root;
+    position: relative;
+    /* overflow-y: hidden; */
 }
 
 
 
 .mobile-hero{
-    background: url('../assets/shampoo.png');
-    background-size: cover;
+    position: absolute;
+    inset: 0;
+    /* background: url('../assets/shampoo.png'); */
+    object-fit: cover;
+    object-position: top center;
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
+    height: 800px;
 }
+
+.modal-btn{
+    position: absolute;
+    left: 20%;
+    top: 600px;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    width: 200px;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+#drawer{
+    position: absolute;
+    animation: slideUp 400ms ease-in forwards;
+}
+
+.hide-drawer{
+    animation: slideUp 400ms ease-in backwards;
+    display: none;
+}
+
+/* Animate drawer */
+
+@keyframes slideUp {
+    from{top: 600px;}
+    to{top: 200px;}
+}
+
+
 
 .vertical-modal{
     width: 100%;
     height: 100%;
-    background: var(--bg-primary);
+    background: var(--bg-primary) !important;
     position: relative;
     border-radius: 24px 24px 0px 0px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     display: flow-root;
 }
 
@@ -90,7 +131,7 @@ a{
 .modal-contents{
     display: grid;
     row-gap: 32px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .modal-header > span{
@@ -132,7 +173,6 @@ a{
 
 .modal-expanded{
     margin-inline: 15px;
-    display: grid;
 }
 
 .carousel-cards{
