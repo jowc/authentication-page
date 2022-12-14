@@ -1,0 +1,23 @@
+{
+  "name": "smart-seal-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jowc/smartseal-auth.git"
+  },
+  "author": "Joseph Chikeme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jowc/smartseal-auth/issues"
+  },
+  "homepage": "https://github.com/jowc/smartseal-auth#readme",
+  "dependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
