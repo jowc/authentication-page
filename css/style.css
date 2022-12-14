@@ -99,7 +99,7 @@ a{
 }
 
 .hide-drawer{
-    animation: slideUp 400ms ease-in backwards;
+    animation: slideUp 600ms ease-in backwards;
     display: none;
 }
 
