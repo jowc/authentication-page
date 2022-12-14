@@ -43,8 +43,8 @@ function closeDrawer() {
 
 // open carousel modal
 function openModal() {
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].classList.toggle("hidden");
+  for (var i = 0; i < modalStates.length; i++) {
+    modalStates[i].classList.toggle("hidden");
     if (modalExpand.classList.contains("hidden")) {
       modalExpand.classList.remove("hidden");
       modalExpand.classList.add("grid");
